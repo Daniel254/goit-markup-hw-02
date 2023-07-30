@@ -17,7 +17,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.32px;
   background-color: var(--white);
-  color: var(--navy-blue);
+  color: var(--slate);
   margin: 0;
   /* padding-top: 72px; */
 }
@@ -37,6 +37,13 @@ button {
   cursor: pointer;
 }
 
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
 /* ========== Typography =========== */
 
 .text-h1 {
@@ -45,6 +52,9 @@ button {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
 }
 
 .text-h2 {
@@ -61,7 +71,7 @@ button {
   font-style: normal;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.02em;
   margin: 0;
 }
 
@@ -108,6 +118,8 @@ header {
   position: fixed;
 }
 .logo {
+  font-family: 'Raleway', sans-serif;
+  color: var(--iris);
   display: inline-flex;
   height: 24px;
   align-items: center;
@@ -146,6 +158,13 @@ header {
   color: var(--navyblue);
   text-decoration: none;
 }
+.site-menu__link:hover,
+.site-menu__link:focus {
+  color: var(--ocean);
+}
+.site-address {
+  font-style: normal;
+}
 .address-list {
   display: flex;
   gap: 40px;
@@ -155,12 +174,67 @@ header {
   text-decoration: none;
   font-style: normal;
 }
+.address-link--mail {
+  color: var(--slate);
+}
+.address-link--mail:hover,
+.address-link--mail:focus {
+  color: var(--ocean);
+}
 
 /* ========== /Header ========== */
 
-/* ========== Hero ========== */
-/* ========== /Hero ========== */
+/* ========== Footer ========== */
+.page-footer {
+  background-color: var(--navy-blue);
+}
+.page-footer .logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
 
+}
+/* ========== /Footer ========== */
+
+/* ========== Main page ========== */
+/* ========== Styles for main page ========== */
+.main-section {
+  background-color: var(--navy-blue);
+
+}
+.main-section-hero {
+  
+}
+.order-service {
+  background-color: #4D5AE5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.order-service:hover,
+.order-service:focus {
+  background-color: #404BBF;
+  cursor: pointer;
+}
+/* .main-section-heading {
+  color: var(--navy-blue);
+} */
+.feature__heading {
+
+}
+.feature__text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+/* ========== Portfolio page ========== */
 /* ========== Filters ========== */
 .tag-list {
   display: inline-flex;
@@ -170,17 +244,25 @@ header {
 .tag-list__item {
 }
 .tag-list-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--iris);
   display: flex;
   padding: 12px 24px;
   align-items: flex-start;
   border-radius: 4px;
   border-radius: 4px;
   border: 1px solid var(--cornflower, #e7e9fc);
-  background: var(--cloud, #F4F4FD);
+  background-color: var(--cloud);
 }
 .tag-list-button:hover,
 .tag-list-button:focus {
-  background: var(--ocean, #404bbf);
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: #404bbf;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
@@ -205,8 +287,12 @@ header {
 }
 .project-card__heading {
   color: var(--navy-blue);
+  letter-spacing: 0.02em;
 }
 .project-card__tag {
   margin: 0;
   color: var(--slate);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
