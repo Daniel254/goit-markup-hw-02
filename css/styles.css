@@ -294,7 +294,6 @@ header {
 
 /* ========== Projects ========== */
 .project-list {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-block-start: 0;
   margin-block-end: 0;
@@ -314,4 +313,18 @@ header {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.portfolio-header {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue);
+}
+.main-section-four-list-item-p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
 }
